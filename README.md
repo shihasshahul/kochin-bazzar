@@ -1,1 +1,0 @@
-# kochin-bazzar app suyty
