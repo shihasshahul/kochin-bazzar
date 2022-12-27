@@ -1,3 +1,68 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a href="#" class="navbar-brand">Kochin<b>Bazzar</b></a>  		
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<div class="navbar-nav" >
+			<a href="#" class="nav-item nav-link" id="nav-items">Home</a>
+            <a href="#" class="nav-item nav-link" id="nav-items">About us</a>
+            <a href="#" class="nav-item nav-link" id="nav-items">Favourites <i class="fa fa-heart" aria-hidden="true"></i></a>
+			<a href="#" class="nav-item nav-link" id="nav-items">Post</a>		
+            <a href="#" class="nav-item nav-link" id="nav-items">Add Post</a>
+            <a href="#" class="nav-item nav-link" id="nav-items">Post Ads</a>	
+			<div class="nav-item dropdown">
+				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle" id="nav-items">Categories</a>
+				<div class="dropdown-menu">					
+					<a href="#" class="dropdown-item">Rent</a>
+					<a href="#" class="dropdown-item">Real estate</a>
+					<a href="#" class="dropdown-item">PG</a>
+					<a href="#" class="dropdown-item">Hotel</a>
+				</div>
+            </div>
+			<a href="#" class="nav-item nav-link" id="nav-items">Contact us</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+			<div class="nav-item dropdown login-dropdown">
+				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle"><i class="fa fa-user-o"></i> Login/Register</a>
+				<div class="dropdown-menu">					
+                    <form class="form-inline login-form" >
+                        <div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<span class="fa fa-user"></span>
+								</span>                    
+							</div>
+                            <input type="text" class="form-control" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<i class="fa fa-lock"></i>
+								</span>                    
+							</div>
+                            <input type="text" class="form-control" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <a href=""><p>Register here</p></a>
+                    </form>
+                    
+                </div>
+            </div>			
+        </div>
+        <!-- <div class="nav-item dropdown ml-auto">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">Paula Wilson <b class="caret"></b></a>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
+					<a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a>
+					<a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
+					
+            </div>
+        </div> -->
 
-<button class="btn btn-primary">Click here</button>
+        
+	</div>
+</nav>
