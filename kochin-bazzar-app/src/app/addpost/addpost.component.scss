@@ -13,7 +13,7 @@ body {
 .form-body {
   height: 100%;
   background-color: #152733;
-//   overflow: hidden;
+  overflow: hidden;
 }
 
 .form-holder {
@@ -45,7 +45,7 @@ body {
   padding: 40px;
   display: inline-block;
   width: 100%;
-  min-width: 540px;
+  min-width: 300px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -91,10 +91,10 @@ body {
   border: 0;
   outline: 0;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: rgb(216, 215, 215);
   font-size: 15px;
   font-weight: 300;
-  color: #8d8d8d;
+  color: #0c0c0c;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 16px;

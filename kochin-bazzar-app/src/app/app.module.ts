@@ -18,6 +18,7 @@ import { AddpostComponent } from './addpost/addpost.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
+
     FooterComponent,
     SidebarComponent,
     AddpostComponent
@@ -25,6 +26,7 @@ import { AddpostComponent } from './addpost/addpost.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
     
   ],
   providers: [],
