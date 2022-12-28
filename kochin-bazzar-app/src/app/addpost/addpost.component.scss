@@ -13,7 +13,9 @@ body {
 .form-body {
   height: 100%;
   background-color: #152733;
+  
 //   overflow: hidden;
+
 }
 
 .form-holder {
@@ -23,6 +25,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  
 }
 
 .form-holder .form-content {
@@ -41,11 +44,11 @@ body {
 }
 
 .form-content .form-items {
-  border: 3px solid #fff;
+  border: 3px solid rgb(255, 0, 0);
   padding: 40px;
   display: inline-block;
   width: 100%;
-  min-width: 540px;
+  min-width: 300px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -55,7 +58,7 @@ body {
 }
 
 .form-content h3 {
-  color: #fff;
+  color: rgb(248, 4, 4);
   text-align: left;
   font-size: 28px;
   font-weight: 600;
