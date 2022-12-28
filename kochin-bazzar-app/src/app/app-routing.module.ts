@@ -4,8 +4,13 @@ import { AddpostComponent } from './addpost/addpost.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+
+ {path:'addpost',component:AddpostComponent},
+ {path:'',component:HomeComponent},
+
   { path: 'addpost', component: AddpostComponent },
   { path: '', component: HomeComponent }
+
 ];
 
 @NgModule({
