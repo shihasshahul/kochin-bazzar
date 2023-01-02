@@ -12,7 +12,7 @@ body {
     background: rgb(255, 179, 179);
     padding-left: 16px;
     padding-right: 16px;
-    border-bottom: 2px solid #1b1414;
+    border-bottom: 2px solid #eee2e2;
     border-radius: 0;
     
     
@@ -112,11 +112,11 @@ body {
 }
 
 .navbar .login-dropdown .dropdown-menu {
-    width: 505px;
-    padding: 20px;
+    width: 237px;
+    padding: 14px;
     left: auto;
     right: 0;
-    height: 100px;
+    height: 66px;
 }
 
 .navbar .login-dropdown .dropdown-toggle::after {
@@ -124,6 +124,12 @@ body {
 }
 #nav-items{
     padding-left: 20px;
+}
+#btnloginreg{
+    padding: 5px;
+    width:45%;
+
+    
 }
 
 

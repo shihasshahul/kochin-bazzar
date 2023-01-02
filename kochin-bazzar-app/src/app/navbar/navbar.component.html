@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="navv" >
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top " style="" id="navv" >
 	<a href="#" class="navbar-brand">Kochin<b>Bazzar</b></a>  		
 	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 		<span class="navbar-toggler-icon"></span>
@@ -6,6 +6,13 @@
 	<!-- Collection of nav links, forms, and other content for toggling -->
 	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
 		<div class="navbar-nav " >
+
+			<a href="#" class="nav-item nav-link " id="nav-items" >Home</a>
+            <a href="#" class="nav-item nav-link"  id="nav-items">About-us</a>
+            <a href="#" class="nav-item nav-link"  id="nav-items">Favourites <i class="fa fa-heart" aria-hidden="true"></i></a>
+			<a routerLink="/feeds" class="nav-item nav-link"  id="nav-items">Feeds</a>		
+            <a routerLink="/addpost" class="nav-item nav-link" id="nav-items" >Add-Feeds</a>
+
 			<a href="#" class="nav-item nav-link" id="nav-items">Home</a>
             <a href="#" class="nav-item nav-link" id="nav-items">About-us</a>
             <a href="#" class="nav-item nav-link" id="nav-items">Favourites <i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -15,23 +22,29 @@
             <a href="#" class="nav-item nav-link" id="nav-items">Post-Ads</a>	
 
             <a routerLink="/addpost" class="nav-item nav-link" id="nav-items">Add-Feeds</a>
+
             <a routerLink="" class="nav-item nav-link" id="nav-items">Post-Ads</a>	
 
 			<div class="nav-item dropdown">
-				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle" id="nav-items">Categories</a>
+				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle"  id="nav-items">Categories</a>
 				<div class="dropdown-menu">					
-					<a href="#" class="dropdown-item">Rent</a>
-					<a href="#" class="dropdown-item">Real estate</a>
-					<a href="#" class="dropdown-item">PG</a>
-					<a href="#" class="dropdown-item">Hotel</a>
+					<a href="#" class="dropdown-item" >Rent</a>
+					<a href="#" class="dropdown-item" >Real estate</a>
+					<a href="#" class="dropdown-item" >PG</a>
+					<a href="#" class="dropdown-item" >Hotel</a>
 				</div>
             </div>
         </div>
         <div class="navbar-nav ml-auto">
 			<div class="nav-item dropdown login-dropdown">
-				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle"><i class="fa fa-user-o"></i> Login/Register</a>
-				<div class="dropdown-menu">					
-                    <form class="form-inline login-form" >
+				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle" ><i class="fa fa-user-o"></i> Login/Register</a>
+				<div class="dropdown-menu">		
+					<div >
+						<button class="btn btn-primary" [routerLink]="['/login']" id="btnloginreg">Login</button> &nbsp;
+						<button class="btn btn-primary" [routerLink]="['/register']" id="btnloginreg" style="float: right;"  >Register</button>
+
+					</div>			
+                    <!-- <form class="form-inline login-form" >
                         <div class="input-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text">
@@ -50,7 +63,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Login</button>
                         <a href=""><p>Register here</p></a>
-                    </form>
+                    </form> -->
                     
                 </div>
             </div>			

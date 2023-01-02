@@ -11,6 +11,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 import { AddpostComponent } from './addpost/addpost.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { NavbarbottComponent } from './navbarbott/navbarbott.component';
+import { FeedsComponent } from './feeds/feeds.component';
+import { PostadsComponent } from './postads/postads.component';
 
 
 @NgModule({
@@ -21,7 +26,12 @@ import { AddpostComponent } from './addpost/addpost.component';
 
     FooterComponent,
     SidebarComponent,
-    AddpostComponent
+    AddpostComponent,
+    LoginComponent,
+    RegisterComponent,
+    NavbarbottComponent,
+    FeedsComponent,
+    PostadsComponent
   ],
   imports: [
     BrowserModule,
