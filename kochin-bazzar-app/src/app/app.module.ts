@@ -23,6 +23,7 @@ import { PostadsComponent } from './postads/postads.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
+
     FooterComponent,
     SidebarComponent,
     AddpostComponent,
@@ -35,6 +36,7 @@ import { PostadsComponent } from './postads/postads.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
     
   ],
   providers: [],
