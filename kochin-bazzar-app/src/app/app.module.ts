@@ -16,6 +16,8 @@ import { RegisterComponent } from './register/register.component';
 import { NavbarbottComponent } from './navbarbott/navbarbott.component';
 import { FeedsComponent } from './feeds/feeds.component';
 import { PostadsComponent } from './postads/postads.component';
+import { AdsComponent } from './ads/ads.component';
+import { FavouritesComponent } from './favourites/favourites.component';
 
 
 @NgModule({
@@ -23,6 +25,7 @@ import { PostadsComponent } from './postads/postads.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
+
     FooterComponent,
     SidebarComponent,
     AddpostComponent,
@@ -30,11 +33,14 @@ import { PostadsComponent } from './postads/postads.component';
     RegisterComponent,
     NavbarbottComponent,
     FeedsComponent,
-    PostadsComponent
+    PostadsComponent,
+    AdsComponent,
+    FavouritesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
     
   ],
   providers: [],
