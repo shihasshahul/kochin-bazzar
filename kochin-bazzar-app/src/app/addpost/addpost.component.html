@@ -1,169 +1,96 @@
-
- <!-- <div class="form-body">
-
-
-
-    <div class="form-body ">
-        <div class="row container-fluid" style="margin-top: 50px;" >
-
- <div class="form-body">
-
-        <div class="row">
-
-            <div class="form-holder">
-                <div class="form-content">
-                    <div class="form-items">
-                        <h3>Add post</h3>
-                        <p>Fill in the data below.</p>
-                        <form class="requires-validation" novalidate>
-
-                            <div class="col-md-12">
-                               <input class="form-control" type="text" name="name" placeholder="Title" required>
-                              
-                            </div>
-
-                            <div class="col-md-12">
-                                <input class="form-control" type="email" name="email" placeholder="Location" required>
-                                 
-                            </div>
-
-                           <div class="col-md-12">
-                                <select class="form-select mt-3" required>
-                                      <option selected disabled value="">Type</option>
-                                      <option value="rent">Rent</option>
-                                      <option value="sell">For sell</option>
-                                      <option value="buying">For buying</option>
-                                      <option value="pg">P G</option>
-                                      <option value="hotel">Hotel</option>
-                               </select>
-                                
-                           </div>
-
-
-                           <div class="col-md-12">
-                              <input class="form-control" type="text" name="price" placeholder="Price" required>
-                               
-                           </div>
-                            <div class="col-md-12">
-                              <input class="form-control" type="text" name="contact" placeholder="Contact Number" required>
-                               
-                           </div>
-
-
-                           <!-- <div class="col-md-12 mt-3">
-                            <label class="mb-3 mr-1" for="gender">po: </label>
-
-                            <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
-                            <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
-
-                            <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
-                            <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
-
-                            
-                            
-                               
-                            </div> -->
-                            <!-- <div class="col-md-12">
-                                <input class="form-control" type="text" name="landmark" placeholder=" Near Landmark" required>
-                                 
-                            </div>
-                            <div class="col-md-12" style ="margin-top: 10px;">
-                                <input class="form-control" type="file" name="image" placeholder="image" required>
-                                 
-                            </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                          <label class="form-check-label">I confirm that all data are correct</label>
-                         <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
-                        </div>
-                  
-
-                            <div class="form-button mt-3">
-                                <button id="submit" type="submit" class="btn btn-primary">Share Post</button>
-                            </div>
-                        </form>
-                    </div>
+<section class="vh-50 gradient-custom">
+  <div class="container py-2 h-50">
+    <div class="row justify-content-center align-items-center h-50" style="padding: 50px;margin-top: 20px;">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration"
+          style="border-radius: 15px;background-color: rgb(225, 232, 238);">
+          <div class="card-body p-4 p-md-5" style="padding: 2rem !important">
+            <h2 class="mb-4 pb-2 pb-md-0 mb-md-5" style="text-align: center;">Add post</h2> <br>
+            <form style="margin-top: -25px;">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="firstName" class="form-control form-control-lg" placeholder="Title" />
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div> --> 
-
-    <section class="vh-50 gradient-custom">
-        <div class="container py-2 h-50">
-          <div class="row justify-content-center align-items-center h-50" style="padding: 50px;margin-top: 20px;">
-            <div class="col-12 col-lg-9 col-xl-7">
-              <div class="card shadow-2-strong card-registration" style="border-radius: 15px;background-color: rgb(225, 232, 238);">
-                <div class="card-body p-4 p-md-5" style="padding: 2rem !important">
-                  <h2 class="mb-4 pb-2 pb-md-0 mb-md-5" style="text-align: center;">Add post</h2>
-                  <form style="margin-top: -25px;">
-                    <div class="row">
-                      <div class="col-md-6 mb-4" >
-                        <div class="form-outline">
-                          <input type="text" id="firstName" class="form-control form-control-lg" placeholder="Title" />
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-4">
-                        <div class="form-outline">
-                          <input type="text" id="lastName" class="form-control form-control-lg" placeholder="Location" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 mb-4 d-flex align-items-center">
-                        <div class="form-outline datepicker w-100">
-                          <input type="text" class="form-control form-control-lg" id="birthdayDate" placeholder="Price" />
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-4">
-    
-                        <select class="form-select form-select-lg "  aria-label=".form-select-lg example" >
-                            <option selected >Type</option>
-                            <option value="1">Rent</option>
-                            <option value="2">Sell</option>
-                            <option value="3">Pg</option>
-                            <option value="3">Hotel</option>
-                          </select>
-                      </div>
-                    </div>
-      
-                    <div class="row">
-                      <div class="col-md-6 mb-4 pb-2">
-      
-                        <div class="form-outline">
-                          <input type="email" id="emailAddress" class="form-control form-control-lg" placeholder="Email id" />
-                          
-                        </div>
-      
-                      </div>
-                      
-
-                      <div class="col-md-6 mb-4 pb-2">
-      
-                        <div class="form-outline">
-                          <input type="tel" id="phoneNumber" class="form-control form-control-lg" placeholder="Phone Number" />
-                          
-                        </div>
-      
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-4 pb-2">
-      
-                        <div class="form-outline">
-                          <input type="file" id="image" class="form-control form-control-lg" placeholder="Email id" />
-                          
-                        </div>
-      
-                      </div>
-                    
-      
-                    <div class="mt-4 pt-2" style="align-items:center;"  >
-                      <input style="margin-inline-start: 38%;" class="btn btn-primary" type="submit" value="Submit" />
-                    </div>
-      
-                  </form>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="lastName" class="form-control form-control-lg" placeholder="Location" />
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+                  <div class="form-outline datepicker w-100">
+                    <input type="text" class="form-control form-control-lg" id="birthdayDate" placeholder="Price" />
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <select class="form-select form-select-lg " aria-label=".form-select-lg example">
+                    <option selected>Type</option>
+                    <option value="1">Rent</option>
+                    <option value="2">Sell</option>
+                    <option value="3">Pg</option>
+                    <option value="3">Hotel</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <input type="email" id="emailAddress" class="form-control form-control-lg" placeholder="Email id" />
+
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <input type="tel" id="phoneNumber" class="form-control form-control-lg"
+                      placeholder="Phone Number" />
+
+                  </div>
+
+                </div>
+              </div>
+
+               <div class="col-md-12 mb-4 pb-2">
+
+                <div class="form-outline">
+                  <input type="text" id="image" class="form-control form-control-lg" placeholder="Details" />
+
+                </div>
+
+              </div>
+              <div class="col-md-12 mb-4 pb-2">
+
+                <div class="form-outline">
+                  <input type="file" id="image" class="form-control form-control-lg" />
+
+                </div>
+
+              </div>
+
+              <div class="form-check d-flex justify-content-center mb-5">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg"
+                  style="margin-left: -18em" />
+                <label class="form-check-label" for="form2Example3g">
+                  I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                </label>
+              </div>
+
+
+              <div class="mt-4 pt-2">
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit" style="width: 100%;" />
+              </div>
+
+            </form>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
