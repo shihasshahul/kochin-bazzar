@@ -1,8 +1,8 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    
     username: admin
-    url: userdetails.cebdnrrkrbxu.ap-northeast-1.rds.amazonaws.com
+    url: jdbc:mysql://database-2.cebdnrrkrbxu.ap-northeast-1.rds.amazonaws.com:3306/users
     password: rootroot
   jpa:
     properties:

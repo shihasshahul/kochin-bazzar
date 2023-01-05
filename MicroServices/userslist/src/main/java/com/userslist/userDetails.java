@@ -1,35 +1,42 @@
-package com.userdetails;
+package com.userslist;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
 import jakarta.persistence.Table;
 
 @Entity
-@Table (schema="app")
-public class UserDetails {
+@Table(schema="app")
+
+public class userDetails {
 	
 	@Id
-	@GeneratedValue(strategy =GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	
-	@Column(name="id")
+	@Column(name="ID")
 	private long id;
+	@Column(name="NAME")
 	private String name;
+	@Column(name="LASTNAME")
 	private String lastname;
+	@Column(name="EMAIL")
 	private String email;
+	@Column(name="PASSWORD")
 	private String password;
+	@Column(name="PHONE NUMBER")
 	private String phonenumber;
+	@Column(name="LOCATION")
 	private String location;
 	
 	
 	
-	public UserDetails() {
+	
+	public userDetails() {
 		super();
 	}
-	public UserDetails(long id, String name, String lastname, String email, String password, String phonenumber,
+	public userDetails(long id, String name, String lastname, String email, String password, String phonenumber,
 			String location) {
 		super();
 		this.id = id;
@@ -82,10 +89,7 @@ public class UserDetails {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	@Override
-	public String toString() {
-		return "UserDetails [id=" + id + ", name=" + name + ", lastname=" + lastname + ", email=" + email
-				+ ", password=" + password + ", phonenumber=" + phonenumber + ", location=" + location + "]";
-	}
+	
 
+	
 }
