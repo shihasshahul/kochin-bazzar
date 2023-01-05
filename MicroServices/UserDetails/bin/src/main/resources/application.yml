@@ -1,6 +1,6 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: admin
     url: userdetails.cebdnrrkrbxu.ap-northeast-1.rds.amazonaws.com
     password: rootroot
