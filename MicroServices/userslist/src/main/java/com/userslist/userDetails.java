@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(schema="app")
+@Table(name="User list")
 
 public class userDetails {
 	
@@ -16,80 +16,104 @@ public class userDetails {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	
 	@Column(name="ID")
-	private long id;
+	private long UserId;
 	@Column(name="NAME")
-	private String name;
+	private String UserName;
 	@Column(name="LASTNAME")
-	private String lastname;
+	private String UserLastname;
 	@Column(name="EMAIL")
-	private String email;
+	private String UserEmail;
 	@Column(name="PASSWORD")
-	private String password;
-	@Column(name="PHONE NUMBER")
-	private String phonenumber;
+	private String UserPassword;
+	@Column(name="PHONE-NUMBER")
+	private String UserPhonenumber;
 	@Column(name="LOCATION")
-	private String location;
+	private String UserLocation;
+	@Column(name="TYPE")
+	private String UserType;
 	
 	
-	
-	
+	public userDetails(long userId, String userName, String userLastname, String userEmail, String userPassword,
+			String userPhonenumber, String userLocation, String userType) {
+		super();
+		UserId = userId;
+		UserName = userName;
+		UserLastname = userLastname;
+		UserEmail = userEmail;
+		UserPassword = userPassword;
+		UserPhonenumber = userPhonenumber;
+		UserLocation = userLocation;
+		UserType = userType;
+	}
 	public userDetails() {
 		super();
 	}
-	public userDetails(long id, String name, String lastname, String email, String password, String phonenumber,
-			String location) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.lastname = lastname;
-		this.email = email;
-		this.password = password;
-		this.phonenumber = phonenumber;
-		this.location = location;
+	public long getUserId() {
+		return UserId;
 	}
-	public long getId() {
-		return id;
+	public void setUserId(long userId) {
+		UserId = userId;
 	}
-	public void setId(long id) {
-		this.id = id;
+	public String getUserName() {
+		return UserName;
 	}
-	public String getName() {
-		return name;
+	public void setUserName(String userName) {
+		UserName = userName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public String getUserLastname() {
+		return UserLastname;
 	}
-	public String getLastname() {
-		return lastname;
+	public void setUserLastname(String userLastname) {
+		UserLastname = userLastname;
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public String getUserEmail() {
+		return UserEmail;
 	}
-	public String getEmail() {
-		return email;
+	public void setUserEmail(String userEmail) {
+		UserEmail = userEmail;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public String getUserPassword() {
+		return UserPassword;
 	}
-	public String getPassword() {
-		return password;
+	public void setUserPassword(String userPassword) {
+		UserPassword = userPassword;
 	}
-	public void setPassword(String password) {
-		this.password = password;
+	public String getUserPhonenumber() {
+		return UserPhonenumber;
 	}
-	public String getPhonenumber() {
-		return phonenumber;
+	public void setUserPhonenumber(String userPhonenumber) {
+		UserPhonenumber = userPhonenumber;
 	}
-	public void setPhonenumber(String phonenumber) {
-		this.phonenumber = phonenumber;
+	public String getUserLocation() {
+		return UserLocation;
 	}
-	public String getLocation() {
-		return location;
+	public void setUserLocation(String userLocation) {
+		UserLocation = userLocation;
 	}
-	public void setLocation(String location) {
-		this.location = location;
+	public String getUserType() {
+		return UserType;
 	}
+	public void setUserType(String userType) {
+		UserType = userType;
+	}
+	@Override
+	public String toString() {
+		return "userDetails [UserId=" + UserId + ", UserName=" + UserName + ", UserLastname=" + UserLastname
+				+ ", UserEmail=" + UserEmail + ", UserPassword=" + UserPassword + ", UserPhonenumber=" + UserPhonenumber
+				+ ", UserLocation=" + UserLocation + ", UserType=" + UserType + "]";
+	}
+	
+	
+	
+	
+	}
+
+	
+	
+	
 	
 
 	
-}
+
+	
+
