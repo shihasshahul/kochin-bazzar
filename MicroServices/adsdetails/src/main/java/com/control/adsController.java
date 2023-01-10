@@ -17,7 +17,7 @@ import com.repository.adsRepo;
 
 @RestController
 @RequestMapping(value="/adsdetails")
-@CrossOrigin("http://localhost:4200/")
+@CrossOrigin("https://kochinbazzarapp.web.app/")
 public class adsController {
 	@Autowired
 	private adsRepo AdsRepository;
