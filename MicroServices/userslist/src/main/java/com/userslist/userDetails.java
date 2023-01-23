@@ -33,10 +33,13 @@ public class userDetails {
 	private String UserType;
 	
 	
+	public userDetails() {
+		super();
+	}
 	public userDetails(long userId, String userName, String userLastname, String userEmail, String userPassword,
 			String userPhonenumber, String userLocation, String userType) {
 		super();
-		UserId = userId;
+		
 		UserName = userName;
 		UserLastname = userLastname;
 		UserEmail = userEmail;
@@ -45,9 +48,7 @@ public class userDetails {
 		UserLocation = userLocation;
 		UserType = userType;
 	}
-	public userDetails() {
-		super();
-	}
+	
 	public long getUserId() {
 		return UserId;
 	}
