@@ -1,11 +1,7 @@
 
 spring:
   datasource:
-<<<<<<< HEAD:MicroServices/UserDetails/src/main/resources/application.yml
     driver-class-name: com.mysql.jdbc.Driver
-=======
-    
->>>>>>> main:MicroServices/userslist/src/main/resources/application.yml
     username: admin
     url: jdbc:mysql://database-2.cebdnrrkrbxu.ap-northeast-1.rds.amazonaws.com:3306/users
     password: rootroot
@@ -17,5 +13,5 @@ spring:
       ddl-auto: update
     show-sql: 'true'
 server:
-  port: '8082'
+  port: 8082
 

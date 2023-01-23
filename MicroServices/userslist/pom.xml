@@ -53,8 +53,12 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+			</plugin>		
 		</plugins>
+<<<<<<< HEAD
+		<finalName>kochinusersdetails.exe</finalName>
+=======
 		<finalName>postdetails</finalName>
+>>>>>>> c70692e094ce17e92f39acceb54a59c34433db1e
 	</build>
 </project>
