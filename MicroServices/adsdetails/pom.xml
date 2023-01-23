@@ -58,6 +58,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>Adsdetails</finalName>
 	</build>
 
 </project>

@@ -1,4 +1,4 @@
-package com.usercontrol;
+package com.userslist;
 
 import java.util.List;
 
@@ -12,14 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.userrepository.userRepo;
-import com.userslist.userDetails;
-
 
 
 @RestController
-@RequestMapping(value="api/users")
-//@CrossOrigin("https://kochinbazzarapp.web.app/")
+@RequestMapping("/users")
+@CrossOrigin("https://kochinbazzarapp.web.app/")
 
 public class userController {
 	@Autowired

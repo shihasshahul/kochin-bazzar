@@ -1,4 +1,4 @@
-package com.control;
+package com.adsdetails;
 
 import java.util.List;
 
@@ -12,11 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.adsdetails.adsDetails;
-import com.repository.adsRepo;
-
 @RestController
-@RequestMapping(value="/adsdetails")
+@RequestMapping(value="/ads")
 @CrossOrigin("https://kochinbazzarapp.web.app/")
 public class adsController {
 	@Autowired

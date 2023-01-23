@@ -1,4 +1,4 @@
-package com.control;
+package com.postdetails;
 
 import java.util.List;
 
@@ -12,12 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.postdetails.favouritesDetails;
-import com.repository.favouritesRepo;
-
 
 @RestController
-@RequestMapping(value="/favourites")
+@RequestMapping(value="/fav")
 @CrossOrigin("http://localhost:4200/")
 public class favouritesController {
 
