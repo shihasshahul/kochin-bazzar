@@ -1,0 +1,10 @@
+{
+    "/api":{
+        "target":"http://kochinuser-env.eba-r4yux4kr.ap-northeast-1.elasticbeanstalk.com/",
+        "secure":false,
+        "changeOrgin":"true",
+        "logLevel":"debug",
+        "Access-Control-Allow-Origin": "http://kochinuser-env.eba-r4yux4kr.ap-northeast-1.elasticbeanstalk.com/"
+        
+    }
+}
