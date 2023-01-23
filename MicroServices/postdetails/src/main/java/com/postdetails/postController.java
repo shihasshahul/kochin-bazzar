@@ -1,4 +1,4 @@
-package com.control;
+package com.postdetails;
 
 import java.util.List;
 
@@ -12,12 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.postdetails.postDetails;
-import com.repository.postRepo;
-
 
 @RestController
-@RequestMapping(value="/productdetails")
+@RequestMapping(value="/post")
 @CrossOrigin("https://kochinbazzarapp.web.app/")
 public class postController {
 	
