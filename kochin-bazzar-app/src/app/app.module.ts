@@ -18,6 +18,7 @@ import { FeedsComponent } from './feeds/feeds.component';
 import { PostadsComponent } from './postads/postads.component';
 import { AdsComponent } from './ads/ads.component';
 import { FavouritesComponent } from './favourites/favourites.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { FavouritesComponent } from './favourites/favourites.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     
     
   ],
