@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value="/ads")
-@CrossOrigin("https://kochinbazzarapp.web.app/")
+@CrossOrigin(origins="*")
 public class adsController {
 	@Autowired
 	private adsRepo AdsRepository;
