@@ -25,8 +25,6 @@ import com.userslist.userDetails;
 @RestController
 @RequestMapping("/users")
 @CrossOrigin(origins="*")
-
-
 public class userController {
 	@Autowired
 	private userRepo UserRepository;

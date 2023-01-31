@@ -19,6 +19,8 @@ import { PostadsComponent } from './postads/postads.component';
 import { AdsComponent } from './ads/ads.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -41,7 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule,ReactiveFormsModule,FormsModule,
     
     
   ],

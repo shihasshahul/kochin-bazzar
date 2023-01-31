@@ -6,33 +6,33 @@
           style="border-radius: 15px;background-color: rgb(225, 232, 238);">
           <div class="card-body p-4 p-md-5" style="padding: 2rem !important">
             <h2 class="mb-4 pb-2 pb-md-0 mb-md-5" style="text-align: center;">Add post</h2> <br>
-            <form style="margin-top: -25px;">
+            <form style="margin-top: -25px;" [formGroup]="addpostForm">
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="firstName" class="form-control form-control-lg" placeholder="Title" />
+                    <input type="text" id="title" class="form-control form-control-lg" placeholder="Title" formControlName="title" />
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="lastName" class="form-control form-control-lg" placeholder="Location" />
+                    <input type="text" id="lastName" class="form-control form-control-lg" placeholder="Location" formControlName="location" />
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 mb-4 d-flex align-items-center">
                   <div class="form-outline datepicker w-100">
-                    <input type="text" class="form-control form-control-lg" id="birthdayDate" placeholder="Price" />
+                    <input type="text" class="form-control form-control-lg" id="birthdayDate" placeholder="Price" formControlName="price" />
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
 
-                  <select class="form-select form-select-lg " aria-label=".form-select-lg example">
+                  <select class="form-select form-select-lg " aria-label=".form-select-lg example" formControlName="type">
                     <option selected>Type</option>
-                    <option value="1">Rent</option>
-                    <option value="2">Sell</option>
-                    <option value="3">Pg</option>
-                    <option value="3">Hotel</option>
+                    <option value="rent">Rent</option>
+                    <option value="sell">Sell</option>
+                    <option value="pg">Pg</option>
+                    <option value="hotel">Hotel</option>
                   </select>
                 </div>
               </div>
@@ -41,7 +41,7 @@
                 <div class="col-md-6 mb-4 pb-2">
 
                   <div class="form-outline">
-                    <input type="email" id="emailAddress" class="form-control form-control-lg" placeholder="Email id" />
+                    <input type="email" id="emailAddress" class="form-control form-control-lg" placeholder="Email id" formControlName="email" />
 
                   </div>
 
@@ -50,7 +50,7 @@
 
                   <div class="form-outline">
                     <input type="tel" id="phoneNumber" class="form-control form-control-lg"
-                      placeholder="Phone Number" />
+                      placeholder="Phone Number" formControlName="mobile" />
 
                   </div>
 
@@ -60,7 +60,7 @@
                <div class="col-md-12 mb-4 pb-2">
 
                 <div class="form-outline">
-                  <input type="text" id="image" class="form-control form-control-lg" placeholder="Details" />
+                  <input type="text" id="image" class="form-control form-control-lg" placeholder="Details" formControlName="details" />
 
                 </div>
 
@@ -68,7 +68,7 @@
               <div class="col-md-12 mb-4 pb-2">
 
                 <div class="form-outline">
-                  <input type="file" id="image" class="form-control form-control-lg" />
+                  <input type="file" id="image" class="form-control form-control-lg" formControlName="image" (change)="selectimg($event)" />
 
                 </div>
 
@@ -84,7 +84,7 @@
 
 
               <div class="mt-4 pt-2">
-                <input class="btn btn-primary btn-lg" type="submit" value="Submit" style="width: 100%;" />
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit" style="width: 100%;" (click)="handleSendFile()" />
               </div>
 
             </form>
