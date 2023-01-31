@@ -15,7 +15,7 @@
         </ul>
       </div> &nbsp; &nbsp;
         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"  />
-        <button type="button" class="btn btn-outline-primary">search</button>
+        <button type="button" class="btn btn-outline-primary">Search</button>
         </div>
       
 </section>
@@ -27,7 +27,7 @@
 <div class="container">
     <!--Section: News of the day-->
     <section class="border-bottom pb-4 mb-5" style="margin-top: 30px;">
-      <div class="row gx-5">
+      <div class="row gx-5" *ngFor="let posts of ">
         <div class="col-md-6 mb-4">
           <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
             <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
@@ -38,7 +38,7 @@
         </div>
   
         <div class="col-md-6 mb-4">
-          <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+          <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">New Posts</span>
           <h4><strong>Facilis consequatur eligendi</strong></h4>
           <p class="text-muted">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur

@@ -9,11 +9,15 @@ import { KochinappService } from '../kochinapp.service';
 export class LoginComponent implements OnInit {
 
   constructor(private service:KochinappService) { 
-    service.userdetails()
+    
+    
    
   }
 
   ngOnInit(): void {
+    this.service.userdetails()
+   
+    
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { KochinappService } from '../kochinapp.service';
 
 @Component({
   selector: 'app-feeds',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:KochinappService) { }
 
   ngOnInit(): void {
   }
+  
 
 }

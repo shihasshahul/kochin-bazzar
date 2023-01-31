@@ -6,17 +6,29 @@ import { Injectable } from '@angular/core';
 })
 export class KochinappService {
 
-  usersdetails:any= []
+  usersDetails:any= []
+  postsDetails:any= []
+  adsDetails:any= []
   constructor(private http:HttpClient) { 
     
   }
 
   userdetails(){
-      this.http.get("http://kochinuser-env.eba-r4yux4kr.ap-northeast-1.elasticbeanstalk.com/users/userdetails").subscribe(data=>
-        console.log(this.usersdetails=data)
-      )
-   
+      this.http.get(this.userUrl).subscribe(
+        data=>
+        this.usersDetails=data)   
   }
+  postsdetails(){
+    this.http.get(this.postUrl).subscribe(
+      data=>
+      this.postsDetails=data)   
+}
+adsdetails(){
+  this.http.get(this.adUrl).subscribe(
+    data=>
+    this.adsDetails=data)   
+}
+  
 
   userUrl = "http://kochinuser-env.eba-r4yux4kr.ap-northeast-1.elasticbeanstalk.com/users/userdetails"
   postUrl = "http://postfavservices-env.eba-efjkm5dm.ap-northeast-1.elasticbeanstalk.com/"
