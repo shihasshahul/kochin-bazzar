@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "aws-s3-upload": "0.0.2",
     "aws-s3-upload-ash": "^1.1.4",
     "aws-sdk": "^2.1304.0",
     "bootstrap": "^5.2.3",

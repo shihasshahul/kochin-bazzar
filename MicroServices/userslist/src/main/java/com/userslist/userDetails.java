@@ -36,7 +36,7 @@ public class userDetails {
 	public userDetails() {
 		super();
 	}
-	public userDetails(long userId, String userName, String userLastname, String userEmail, String userPassword,
+	public userDetails(String userName, String userLastname, String userEmail, String userPassword,
 			String userPhonenumber, String userLocation, String userType) {
 		super();
 		
